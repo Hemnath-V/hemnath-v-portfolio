@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website!  
 This is a showcase of my skills, projects, and journey as a **Data Analyst** 📊, built with passion and creativity 💡.
 
-🌐 **Live Demo**: [Click here to view](https://hemnathvrx.netlify.app)  
+🌐 **Live Demo**: [Click here to view](https://hemfolio.netlify.app/)  
 📦 **GitHub Repo**: [hemnath-v-portfolio](https://github.com/Hemnath-V/hemnath-v-portfolio)
 
 ---
