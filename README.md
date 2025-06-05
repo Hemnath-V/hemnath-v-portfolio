@@ -53,8 +53,10 @@ I have gained hands-on experience in data analysis and visualization through int
 
 ## 📚 Education
 
-- Bachelor of Science (BSc) in Computer Science, [Your College Name], [Year of Graduation]  
+- Master of Science (MSc) in Computer Science, Nazareth College of Arts & Science, 2024  
+- Bachelor of Science (BSc) in Computer Science, SA College of Arts & Science, 2022  
 - Relevant coursework: Data Structures, Database Management, Statistics, Machine Learning Basics  
+
 
 ---
 
