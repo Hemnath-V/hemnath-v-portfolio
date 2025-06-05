@@ -44,10 +44,10 @@ I have gained hands-on experience in data analysis and visualization through int
 
 ## 🎓 Certifications
 
+- **Full Stack Data Sciene with AI** (Greens Technology) 
 - **BCG GenAI Job Simulation** (Forage)  
 - **Deloitte Australia Data Analytics Virtual Internship** (Forage)  
-- **AWS Cloud Practitioner** (Mphasis)  
-- **Basics of Linux Command Line** (Udemy)  
+- **AWS Cloud Practitioner** (Mphasis)   
 
 ---
 
