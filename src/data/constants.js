@@ -18,7 +18,7 @@ export const Bio = {
     "I am a passionate and detail-oriented Data Analyst, skilled in transforming data into actionable insights. With a focus on data visualization, analysis, and problem-solving, I am eager to contribute to data-driven decision-making and achieve impactful results.",
   github: "https://github.com/Hemnath-V",
   resume:
-    "https://drive.google.com/file/d/1hwUt3h3_GGxTj0zP8lTUsyzoAdNe6hdA/view?usp=sharing",
+    "https://drive.google.com/file/d/1I5L0P6YGJfhxCY1LZZhT5DzL3WT_l09H/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/hemnath-data-analyst-python-mysql-powerbi-excel-genai-data-scientist-ml-llm-pyspark-eda-etl/",
 };
 
@@ -85,7 +85,32 @@ export const experiences = [
 
   {
     id: 0,
-    img: "https://github.com/user-attachments/assets/c57399ae-abdf-4b67-a6a4-40f2736a84e3", // Replace with your logo URL if available
+    img: "https://github.com/user-attachments/assets/a932472f-747f-465e-88d4-1251470aabcd", // Zebronics logo (can be replaced with a better link)
+    role: "Business Analyst Intern",
+    company: "Zebronics India Pvt Ltd",
+    date: "June 2025 - Present",
+    desc: "Conducted competitive intelligence, catalog audits, pricing analysis, and DRR reporting across major quick commerce platforms. Delivered actionable insights that led to 3 successful product launches and improved decision-making in product strategy.",
+    skills: [
+      "Competitive Analysis",
+      "Catalog Optimization",
+      "Excel",
+      "Market Research",
+      "Data Reporting",
+      "Product Benchmarking",
+      "Category Share Analysis",
+      "Inventory Tracking",
+      "Data Visualization",
+      "Business Insights",
+      "Stakeholder Collaboration",
+      "PO Planning",
+      "Strategic Planning"
+    ],
+    doc: "https://github.com/user-attachments/assets/8c677fe4-8146-4e86-aeec-3362710f098a", // Replace with your actual document/report URL
+  },
+
+  {
+    id: 1,
+    img: "https://github.com/user-attachments/assets/946c485c-c711-405c-9f61-b742f08694b6", // Replace with your logo URL if available
     role: "Data Analyst Intern",
     company: "Unified Mentor Private Limited",
     date: "July 2024 - September 2024",
@@ -108,7 +133,7 @@ export const experiences = [
   },
 
   {
-    id: 1,
+    id: 2,
     img: "https://github.com/user-attachments/assets/48fe07b1-e412-4c17-b6ec-967620f82e2e",
     role: "Project Intern",
     company: "TeachSub Technologies",
@@ -136,16 +161,16 @@ export const education = [
     school: "Nazareth College of Arts and Science",
     date: "Jul 2022 - May 2024",
     grade: "8.7 CGPA",
-    desc: "Pursuing Master of Science in Computer Science with an emphasis on modern technologies and real-world application of advanced computing principles. The curriculum includes Data Mining, Artificial Intelligence, Cloud Computing, and Software Engineering. Completed hands-on projects including a capstone internship focused on building a responsive recipe website using a full web technology stack. Developed strong analytical and programming skills by working on live data sets and automating solutions. Also engaged in departmental seminars, academic paper writing, and real-time collaborative assignments that enhance teamwork and communication.",
+    desc: "Completed M.Sc. in Computer Science with a focus on modern technologies including Data Mining, AI, Cloud Computing, and Software Engineering. Completed a capstone internship building a responsive recipe website using a full web stack. Gained strong analytical and programming skills through hands-on projects with live datasets and automation. Also contributed to seminars, academic writing, and collaborative assignments enhancing teamwork and communication",
     degree: "MSc, Computer Science"
   },
   {
     id: 1,
-    img: "https://github.com/user-attachments/assets/ae066800-fe92-44ff-bd45-07680a9277ed", // Replace with actual image URL
+    img: "https://github.com/user-attachments/assets/97be9795-bfea-4bca-9284-32de31059640", // Replace with actual image URL
     school: "SA College of Arts and Science",
     date: "Jun 2019 - Apr 2022",
     grade: "8.4 CGPA",
-    desc: "Completed Bachelor of Science in Computer Science with comprehensive training in core computer fundamentals such as Data Structures, Object-Oriented Programming, Database Management Systems, and Web Development. Built several mini-projects and participated in inter-collegiate technical events. Developed a strong academic base in coding with Python, Java, and SQL. This period also laid the groundwork for exploring analytics, visualization tools, and problem-solving techniques that contributed to a smooth transition into advanced postgraduate studies.",
+    desc: "Completed B.Sc. in Computer Science with strong foundation in Data Structures, OOP, DBMS, and Web Development. Built mini-projects, participated in technical events, and developed coding skills in Python, Java, and SQL. Gained early exposure to analytics, visualization, and problem-solving, paving the way for advanced studies.",
     degree: "BSc, Computer Science"
   },
   {
@@ -153,7 +178,7 @@ export const education = [
     img: "https://github.com/user-attachments/assets/2bcbb460-abcf-46eb-afda-9ce62585fbd9", // Replace with actual image URL
     school: "Nazareth Matriculation Higher Secondary School",
     date: "Jun 2018 - Mar 2019",
-    grade: "75%",
+    grade: "77%",
     desc: "Completed Higher Secondary education under the State Board with a focus on Computer Science, Physics, and Mathematics. Developed basic problem-solving and logical reasoning skills while working with foundational programming concepts.",
     degree: "HSC (12th), Computer Science"
   }
