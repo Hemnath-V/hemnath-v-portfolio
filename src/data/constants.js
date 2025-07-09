@@ -18,7 +18,7 @@ export const Bio = {
     "I am a passionate and detail-oriented Data Analyst, skilled in transforming data into actionable insights. With a focus on data visualization, analysis, and problem-solving, I am eager to contribute to data-driven decision-making and achieve impactful results.",
   github: "https://github.com/Hemnath-V",
   resume:
-    "https://drive.google.com/file/d/1I5L0P6YGJfhxCY1LZZhT5DzL3WT_l09H/view?usp=sharing",
+    "https://drive.google.com/file/d/1pm5pewXEEf1BPN_vYgnikfCe7Qjh7jHA/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/hemnath-data-analyst-python-mysql-powerbi-excel-genai-data-scientist-ml-llm-pyspark-eda-etl/",
 };
 
@@ -149,7 +149,7 @@ export const experiences = [
       "Web Development",
       "User Authentication"
     ],
-    doc: "https://github.com/user-attachments/assets/2c7c0e76-c8f8-4c5b-a645-605db6f731bc",
+    doc: "https://github.com/user-attachments/assets/fc9384b0-75cc-42e9-8584-aa1809b908ff`",
   },
 
 ];
@@ -347,7 +347,7 @@ export const certifications = [
     company: "Mphasis",
     date: "Jan – Mar 2024",
     description: "Learned fundamentals of AWS cloud computing, including EC2, S3, and IAM services.",
-    image: "https://github.com/user-attachments/assets/cb1277a6-2595-4940-9a81-2f46bebad987"
+    image: "https://github.com/user-attachments/assets/dfafdaba-765e-4bc4-84b7-40b97ea1a24d"
   },
   {
     title: "Basics of Linux Command",
