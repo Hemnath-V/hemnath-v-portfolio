@@ -322,20 +322,6 @@ export const projects = [
 
 export const certifications = [
   {
-    title: "BCG GenAI Job Simulation",
-    company: "BCG (via Forage)",
-    date: "May 2025",
-    description: "Developed an AI-powered financial chatbot using Python and pandas. Interpreted complex 10-K/10-Q financial data with rule-based logic to deliver user-friendly insights.",
-    image: "https://github.com/user-attachments/assets/30384b2e-091b-41fc-8940-aa4dd7b0ceeb"
-  },
-  {
-    title: "Deloitte Data Analytics Job Simulation",
-    company: "Deloitte Australia (via Forage)",
-    date: "April 2025",
-    description: "Analyzed forensic technology data, created Tableau dashboards, and used Excel for classification and business insights.",
-    image: "https://github.com/user-attachments/assets/fb3fdccf-5f7d-43ab-be72-31f0a7a17fae"
-  },
-  {
     title: "Full Stack Data Science with AI",
     company: "Greens Technology",
     date: "Apr – Sept 2024",
@@ -348,6 +334,20 @@ export const certifications = [
     date: "Jan – Mar 2024",
     description: "Learned fundamentals of AWS cloud computing, including EC2, S3, and IAM services.",
     image: "https://github.com/user-attachments/assets/dfafdaba-765e-4bc4-84b7-40b97ea1a24d"
+  },
+  {
+    title: "Deloitte Data Analytics Job Simulation",
+    company: "Deloitte Australia (via Forage)",
+    date: "April 2025",
+    description: "Analyzed forensic technology data, created Tableau dashboards, and used Excel for classification and business insights.",
+    image: "https://github.com/user-attachments/assets/fb3fdccf-5f7d-43ab-be72-31f0a7a17fae"
+  },
+  {
+    title: "BCG GenAI Job Simulation",
+    company: "BCG (via Forage)",
+    date: "May 2025",
+    description: "Developed an AI-powered financial chatbot using Python and pandas. Interpreted complex 10-K/10-Q financial data with rule-based logic to deliver user-friendly insights.",
+    image: "https://github.com/user-attachments/assets/30384b2e-091b-41fc-8940-aa4dd7b0ceeb"
   },
   {
     title: "Basics of Linux Command",
