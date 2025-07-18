@@ -32,7 +32,7 @@ const Navbar = () => {
           <NavLink href='#education'>Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <ContactmeButton href={Bio.email} target="_blank">Contact me</ContactmeButton>
+          <ContactmeButton href={`mailto:${Bio.email}`}>Contact me</ContactmeButton>
         </ButtonContainer>
         {
           isOpen &&
@@ -55,7 +55,12 @@ const Navbar = () => {
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
-            <ContactmeButton style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }} href={Bio.email} target="_blank">Contact me</ContactmeButton>
+            <ContactmeButton
+              style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }}
+              href={`mailto:${Bio.email}`}>
+              Contact me
+            </ContactmeButton>
+
           </MobileMenu>
         }
       </NavbarContainer>

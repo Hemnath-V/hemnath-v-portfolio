@@ -4,7 +4,8 @@ export const Bio = {
   github: "https://github.com/Hemnath-V",
   gfg: "https://www.geeksforgeeks.org/user/hemnath_v/",
   leetcode: "https://leetcode.com/u/Hemnath-V/",
-  email: "mailto:hemnathvrx@gmail.com",
+  email: "hemnathvrx@gmail.com?subject=Collaboration%20Opportunity%20%E2%80%93%20Hello%20Hemnath&body=Interested%20in%20working%20with%20you",
+
 
   name: "Hemnath V",
   roles: [
