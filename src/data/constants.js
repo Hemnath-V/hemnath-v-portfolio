@@ -6,6 +6,9 @@ export const Bio = {
   leetcode: "https://leetcode.com/u/Hemnath-V/",
   email: "hemnathvrx@gmail.com",
 
+  email: "hemnathvrx@gmail.com?subject=Collaboration%20Opportunity%20%E2%80%93%20Hello%20Hemnath&body=Interested%20in%20working%20with%20you",
+
+
   name: "Hemnath V",
   roles: [
     "Data Analyst",

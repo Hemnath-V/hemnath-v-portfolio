@@ -56,6 +56,11 @@ const ContactTitle = styled.div`
   color: ${({ theme }) => theme.text_primary};
 `;
 
+const InputWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const ContactInput = styled.input`
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.text_secondary};
@@ -80,6 +85,12 @@ const ContactInputMessage = styled.textarea`
   }
 `;
 
+const ErrorText = styled.span`
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+`;
+
 const ContactButton = styled.input`
   width: 100%;
   background: linear-gradient(225deg, #6a00ff 0%, #ff00b8 100%);
@@ -95,31 +106,69 @@ const ContactButton = styled.input`
   }
 `;
 
+const FixedSnackbar = styled(Snackbar)`
+  && {
+    position: fixed;
+    z-index: 99999;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+`;
+
 const Contact = () => {
-  const [open, setOpen] = useState(false);
   const form = useRef();
+
+  const [snackbar, setSnackbar] = useState({ open: false, message: '', severity: 'success' });
+  const [errors, setErrors] = useState({});
+
+  const handleCloseSnackbar = () => {
+    setSnackbar((prev) => ({ ...prev, open: false }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      'service_qv5tcyf',        // ✅ Correct Service ID
-      'template_bh4skge',       // ✅ Correct Template ID
-      form.current,
-      'kO80fdeD4c3A6mtWl'       // ✅ Your public key here
-    )
-      .then(
-        (result) => {
-          console.log('SUCCESS:', result.text);
-          setOpen(true);
-          form.current.reset();
-        },
-        (error) => {
-          console.error('FAILED:', error);
-          console.error('Error details:', error.text);  // Log detailed error information
-          alert("Failed to send email. Please check the console for errors.");
-        }
-      );
+    const formData = new FormData(form.current);
+    const fromEmail = formData.get('from_email').trim();
+    const fromName = formData.get('from_name').trim();
+    const subject = formData.get('subject').trim();
+    const message = formData.get('message').trim();
+
+    const newErrors = {};
+
+    if (!fromEmail) {
+      newErrors.from_email = 'Please enter your email.';
+    } else if (!fromEmail.endsWith('@gmail.com')) {
+      newErrors.from_email = 'Only @gmail.com emails are allowed.';
+    }
+
+    if (!fromName) newErrors.from_name = 'Please enter your name.';
+    if (!subject) newErrors.subject = 'Please enter a subject.';
+    if (!message) newErrors.message = 'Please enter a message.';
+
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length > 0) {
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        'service_qv5tcyf',
+        'template_bh4skge',
+        form.current,
+        'kO80fdeD4c3A6mtWl'
+      )
+      .then(() => {
+        setSnackbar({ open: true, message: 'Email sent successfully!', severity: 'success' });
+        setErrors({});
+        form.current.reset();
+      })
+      .catch((error) => {
+        console.error('Email send failed:', error);
+        setSnackbar({ open: true, message: 'Failed to send email. Please try again.', severity: 'error' });
+      });
   };
 
   return (
@@ -129,18 +178,44 @@ const Contact = () => {
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" required />
-          <ContactInput placeholder="Your Name" name="from_name" required />
-          <ContactInput placeholder="Subject" name="subject" required />
-          <ContactInputMessage placeholder="Message" name="message" rows="4" required />
+
+          <InputWrapper>
+            <ContactInput placeholder="Your Email" name="from_email" />
+            {errors.from_email && <ErrorText>{errors.from_email}</ErrorText>}
+          </InputWrapper>
+
+          <InputWrapper>
+            <ContactInput placeholder="Your Name" name="from_name" />
+            {errors.from_name && <ErrorText>{errors.from_name}</ErrorText>}
+          </InputWrapper>
+
+          <InputWrapper>
+            <ContactInput placeholder="Subject" name="subject" />
+            {errors.subject && <ErrorText>{errors.subject}</ErrorText>}
+          </InputWrapper>
+
+          <InputWrapper>
+            <ContactInputMessage placeholder="Message" name="message" rows="4" />
+            {errors.message && <ErrorText>{errors.message}</ErrorText>}
+          </InputWrapper>
+
           <ContactButton type="submit" value="Send" />
         </ContactForm>
-        <Snackbar open={open} autoHideDuration={6000} onClose={() => setOpen(false)}>
-          <Alert onClose={() => setOpen(false)} severity="success" sx={{ width: '100%' }}>
-            Email sent successfully!
-          </Alert>
-        </Snackbar>
       </Wrapper>
+
+      <FixedSnackbar
+        open={snackbar.open}
+        autoHideDuration={5000}
+        onClose={handleCloseSnackbar}
+      >
+        <Alert
+          onClose={handleCloseSnackbar}
+          severity={snackbar.severity}
+          sx={{ width: '100%' }}
+        >
+          {snackbar.message}
+        </Alert>
+      </FixedSnackbar>
     </Container>
   );
 };
