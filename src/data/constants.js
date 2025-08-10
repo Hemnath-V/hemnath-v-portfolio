@@ -49,7 +49,6 @@ export const skills = [
         name: "NumPy",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
       }
-
     ],
   },
   {
@@ -88,10 +87,42 @@ export const experiences = [
 
   {
     id: 0,
+    img: "https://github.com/user-attachments/assets/a932472f-747f-465e-88d4-1251470aabcd", // Zebronics logo
+    role: "Business Analyst – E-Commerce (Home Audio Category)",
+    company: "Zebronics India Pvt Ltd",
+    date: "August 2025 - Present",
+    desc: "Specialize in performance analytics for the Home Audio category within e-commerce channels while managing reporting across both e-commerce and quick commerce platforms. Drive category growth through competitive intelligence, pricing strategy analysis, and content optimization. Prepare and automate daily Sell-Out reports, HO stock reports, and MoM/YoY performance dashboards, cutting reporting time by 60% through Google Sheets automation. Track and evaluate category share, sub-category share, and SKU-level KPIs to identify sales trends, optimize assortment, and improve inventory turnover. Collaborate with sales, marketing, and operations teams to enhance product visibility, pricing competitiveness, and overall market share.",
+    skills: [
+      "E-Commerce Analytics",
+      "Quick Commerce Reporting",
+      "Home Audio Category Management",
+      "Competitive Analysis",
+      "Market Research",
+      "Excel", "Excel Automation",
+      "Google Sheets Automation",
+      "Catalog Optimization",
+      "Pricing Intelligence",
+      "Data Reporting",
+      "Category Share Analysis",
+      "Inventory Tracking",
+      "Data Visualization",
+      "Business Insights",
+      "Stakeholder Collaboration",
+      "PO Planning",
+      "Strategic Planning",
+      "KPI Tracking",
+      "Sell-Out Analysis",
+      "Supply Chain Reporting"
+    ],
+    doc: "",
+  },
+
+  {
+    id: 1,
     img: "https://github.com/user-attachments/assets/a932472f-747f-465e-88d4-1251470aabcd", // Zebronics logo (can be replaced with a better link)
     role: "Business Analyst Intern",
     company: "Zebronics India Pvt Ltd",
-    date: "June 2025 - Present",
+    date: "June 2025 - August 2025",
     desc: "Conducted competitive intelligence, catalog audits, pricing analysis, and DRR reporting across major quick commerce platforms. Delivered actionable insights that led to 3 successful product launches and improved decision-making in product strategy.",
     skills: [
       "Competitive Analysis",
@@ -112,7 +143,7 @@ export const experiences = [
   },
 
   {
-    id: 1,
+    id: 2,
     img: "https://github.com/user-attachments/assets/946c485c-c711-405c-9f61-b742f08694b6", // Replace with your logo URL if available
     role: "Data Analyst Intern",
     company: "Unified Mentor Private Limited",
@@ -136,7 +167,7 @@ export const experiences = [
   },
 
   {
-    id: 2,
+    id: 3,
     img: "https://github.com/user-attachments/assets/48fe07b1-e412-4c17-b6ec-967620f82e2e",
     role: "Project Intern",
     company: "TeachSub Technologies",
