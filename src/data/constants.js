@@ -88,10 +88,10 @@ export const experiences = [
   {
     id: 0,
     img: "https://github.com/user-attachments/assets/a932472f-747f-465e-88d4-1251470aabcd", // Zebronics logo
-    role: "Business Analyst – E-Commerce (Home Audio Category)",
+    role: "Mis Executive",
     company: "Zebronics India Pvt Ltd",
     date: "August 2025 - Present",
-    desc: "Specialize in performance analytics for the Home Audio category within e-commerce channels while managing reporting across both e-commerce and quick commerce platforms. Drive category growth through competitive intelligence, pricing strategy analysis, and content optimization. Prepare and automate daily Sell-Out reports, HO stock reports, and MoM/YoY performance dashboards, cutting reporting time by 60% through Google Sheets automation. Track and evaluate category share, sub-category share, and SKU-level KPIs to identify sales trends, optimize assortment, and improve inventory turnover. Collaborate with sales, marketing, and operations teams to enhance product visibility, pricing competitiveness, and overall market share.",
+    desc: "I am responsible for conducting catalogue audits to ensure accuracy in product titles, descriptions, images, and specifications across multiple platforms. I create, maintain, and update daily sell-out reports in Excel to track product performance and sales trends, while also monitoring product reviews, rankings, and stock availability to ensure optimal product positioning and inventory health. I manage Google Sheets automation to generate daily, auto-updated reports that categorize data by category, sub-category, and model, providing clear visualizations of sell-out and stock levels. Additionally, I perform comparative sales analysis between e-commerce and quick commerce channels to identify growth opportunities and performance gaps, delivering actionable insights to support strategies for improving sell-out rates and enhancing category performance. My work also involves close collaboration with cross-functional teams to align product, pricing, and promotional strategies based on analytics findings.",
     skills: [
       "E-Commerce Analytics",
       "Quick Commerce Reporting",
@@ -114,7 +114,7 @@ export const experiences = [
       "Sell-Out Analysis",
       "Supply Chain Reporting"
     ],
-    doc: "",
+    doc: "https://github.com/user-attachments/assets/eb6acd9a-d610-457d-855f-b206ce331407",
   },
 
   {
