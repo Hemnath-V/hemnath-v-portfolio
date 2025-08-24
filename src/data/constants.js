@@ -139,7 +139,7 @@ export const experiences = [
       "PO Planning",
       "Strategic Planning"
     ],
-    doc: "https://github.com/user-attachments/assets/8c677fe4-8146-4e86-aeec-3362710f098a", // Replace with your actual document/report URL
+    doc: "https://github.com/user-attachments/assets/44144cc6-36ea-4c98-9b72-6db2eedccbc4", // Replace with your actual document/report URL
   },
 
   {
